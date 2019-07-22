@@ -1,0 +1,53 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+.left-margin{
+    padding-left: 280px;
+}
+.page-main {
+    background-color: #f0f0f0;
+    box-sizing: border-box;
+    .nav-menu-vertical{
+        height: 100vh;
+    }
+    .app-content{
+        box-sizing: border-box;
+    }
+    .app-content-margin{
+        padding:0 10px;
+    }
+    .web-menus{
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 280px;
+    }
+    .top-bar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 280px;
+        height: 49px;
+        line-height: 49px;
+        background-color: #545c64;
+        border-bottom: 1px solid #ddd;
+        color: #fff;
+        z-index: 10;
+        .web-title{
+            font-size: 22px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .current-user{
+            float: right;
+        }
+        .log-out{
+            float: right;
+            cursor: pointer;
+            margin: 0 20px;
+            font-size: 14px;
+        }
+    }
+}

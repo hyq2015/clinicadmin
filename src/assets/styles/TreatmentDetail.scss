@@ -1,0 +1,191 @@
+.main{
+  background: #ffffff;
+  .content{
+    padding: 20px 10px 0 10px;
+    .user-button{
+      margin: 20px 0;
+    }
+
+    .form-title{
+      padding: 20px 0 10px 0;
+      position: relative;
+
+      &:after{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-bottom: 1px solid #ddd;
+      }
+    }
+
+    .patient-information{
+
+    }
+    .prescription-information{
+      .prescription-main{
+        padding: 20px 10px;
+        .prescription-box{
+          height: 500px;
+          overflow-y: scroll;
+          padding: 10px;
+          border: 1px #ddd solid;
+          .prescription-title{
+            width: 100px;
+            margin: 0 auto;
+          }
+          .prescription-user-msg{
+            color: #606266;
+            font-size: 14px;
+            .prescription-label{
+              display: inline-block;
+              width: 60px;
+              text-align: left;
+              line-height: 40px;
+            }
+            .prescription-content{
+              display: inline-block;
+              line-height: 40px;
+              padding: 0 0 0 5px;
+            }
+
+          }
+
+          .medicine-list-area{
+            margin-top: 20px;
+            .medicine-list-title{
+              font-size: 14px;
+            }
+          }
+        }
+        .medicine-box{
+          margin: 0 0 0 20px;
+          height: 500px;
+          border: 1px #ddd solid;
+          padding: 20px 10px;
+          box-sizing: border-box;
+          overflow-y: scroll;
+          .search-area{
+            position: relative;
+            &:after{
+              content: " ";
+              position: absolute;
+              bottom: -15px;
+              left: 0;
+              right: 0;
+              border-bottom: 1px solid #ddd;
+            }
+          }
+        }
+      }
+      .talk-area{
+        overflow-y: scroll;
+        width: 600px;
+        height: 400px;
+        margin: 10px 0 0 0;
+        box-sizing: border-box;
+        border: 1px #ddd solid;
+        .content-wrap{
+          overflow: hidden;
+          padding: 10px;
+          .user-photo{
+            width: 50px;
+            text-align: center;
+          }
+        }
+        .patientArea{
+          float: left;
+          .talk-box{
+            position: relative;
+            top:-68px;
+            left:60px;
+            max-width: 500px;
+            line-height: 40px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            color: #000000;
+            background: #c7c7c7;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            &:before{
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 0;
+              right: 100%;
+              top: 15px;
+              border-top: 5px solid transparent;
+              border-right: 10px solid #c7c7c7;
+              border-bottom: 5px solid transparent;
+            }
+          }
+        }
+        .doctorArea{
+          float: right;
+          text-align: center;
+          .user-photo{
+            float: right;
+          }
+          .talk-box{
+            position: relative;
+            top:40px;
+            right:60px;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px;
+            box-sizing: border-box;
+            color: #000000;
+            background: #59b700;
+            -moz-border-radius: 6px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            &:before{
+              position: absolute;
+              content: "";
+              width: 0;
+              height: 0;
+              left: 100%;
+              top: 15px;
+              border-top: 5px solid transparent;
+              border-left: 10px solid #59b700;
+              border-bottom: 5px solid transparent;
+            }
+          }
+        }
+
+      }
+      .back-visit{
+        width: 600px;
+      }
+    }
+
+  }
+  .two-input-area{
+    text-align: right;
+    color: #606266;
+    font-size: 14px;
+    .two-input-title{
+      width: 80px;
+      line-height: 40px;
+    }
+    .two-input-unit{
+      line-height: 40px;
+    }
+  }
+  .el-form-padding{
+    padding: 20px 10px;
+  }
+
+  .price-row{
+    margin: 20px;
+    .price-title{
+      line-height: 40px;
+      color: #606266;
+    }
+    .totle-price{
+      margin: 0 10px 0 20px;
+    }
+  }
+}
