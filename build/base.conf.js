@@ -43,7 +43,13 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
-                use: ["file-loader"]
+                use: [{
+                    loader: 'file-loader',
+                    options: {
+                        publicPath: '/',
+                        name: 'assets/[name].[hash].[ext]',
+                    },
+                }]
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/,
@@ -57,7 +63,12 @@ module.exports = {
             {
                 test: /\.js$/,
                 exclude:/node_modules/,
-                use: ["babel-loader"]
+                use: [{
+                    loader: "babel-loader",
+                    options: {
+                        presets: ["@babel/preset-env"]
+                    }
+                }]
             }
         ]
     },
@@ -71,7 +82,7 @@ module.exports = {
     optimization: {
         minimizer: [new UglifyJsPlugin({
             test: /\.js(\?.*)?$/i,
-            exclude: /node_modules/
+            include: /src/
         })],
         runtimeChunk: {
             name: "manifest"
