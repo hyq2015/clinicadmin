@@ -74,7 +74,7 @@
   "dependencies": {
     "@babel/runtime-corejs3": "7.4.4",
     "@rickyhuang/timeutil": "0.0.3",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "copy-webpack-plugin": "^5.0.3",
     "core-js": "3.0.1",
     "element-ui": "2.10.1",
